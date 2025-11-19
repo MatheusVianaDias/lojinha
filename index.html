@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANN'T - Camisetas Masculinas Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">SANN'T</h1>
+                <p class="tagline">Camisetas Masculinas Premium</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="/public/camiseta-masculina-preta-minimalista.jpg" alt="Camiseta Preta" class="carousel-slide">
+                    <img src="/public/camiseta-masculina-branca-estilo-urbano.jpg" alt="Camiseta Branca" class="carousel-slide">
+                    <img src="/public/camiseta-masculina-cinza-casual-moderno.jpg" alt="Camiseta Cinza" class="carousel-slide">
+                    <img src="/public/camiseta-masculina-estilo-fashion-streetwear.jpg" alt="Camiseta Fashion" class="carousel-slide">
+                    <img src="/public/camiseta-premium-tecido-qualidade.jpg" alt="Camiseta Premium" class="carousel-slide">
+                    <img src="/public/homem-vestindo-camiseta-preta-quality.jpg" alt="Camiseta Quality" class="carousel-slide">
+                </div>
+
+                <button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button class="indicator active" onclick="goToSlide(0)"></button>
+                    <button class="indicator" onclick="goToSlide(1)"></button>
+                    <button class="indicator" onclick="goToSlide(2)"></button>
+                    <button class="indicator" onclick="goToSlide(3)"></button>
+                    <button class="indicator" onclick="goToSlide(4)"></button>
+                    <button class="indicator" onclick="goToSlide(5)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products-section">
+        <div class="container">
+            <h2>Coleção de Camisetas</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/camiseta-masculina-preta-minimalista.jpg" alt="Camiseta Preta Minimalista">
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Preta Minimalista</h3>
+                        <p class="price">R$ 89,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-1" value="P" id="size-1-p" checked>
+                                <label for="size-1-p">P</label>
+                                <input type="radio" name="size-1" value="M" id="size-1-m">
+                                <label for="size-1-m">M</label>
+                                <input type="radio" name="size-1" value="G" id="size-1-g">
+                                <label for="size-1-g">G</label>
+                                <input type="radio" name="size-1" value="GG" id="size-1-gg">
+                                <label for="size-1-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Preta Minimalista', 'size-1')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/camiseta-masculina-branca-estilo-urbano.jpg" alt="Camiseta Branca Urban">
+                        <span class="badge">Top Vendas</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Branca Urban Style</h3>
+                        <p class="price">R$ 79,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-2" value="P" id="size-2-p" checked>
+                                <label for="size-2-p">P</label>
+                                <input type="radio" name="size-2" value="M" id="size-2-m">
+                                <label for="size-2-m">M</label>
+                                <input type="radio" name="size-2" value="G" id="size-2-g">
+                                <label for="size-2-g">G</label>
+                                <input type="radio" name="size-2" value="GG" id="size-2-gg">
+                                <label for="size-2-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Branca Urban Style', 'size-2')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/camiseta-masculina-cinza-casual-moderno.jpg" alt="Camiseta Cinza">
+                        <span class="badge">Novo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Cinza Casual</h3>
+                        <p class="price">R$ 84,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-3" value="P" id="size-3-p" checked>
+                                <label for="size-3-p">P</label>
+                                <input type="radio" name="size-3" value="M" id="size-3-m">
+                                <label for="size-3-m">M</label>
+                                <input type="radio" name="size-3" value="G" id="size-3-g">
+                                <label for="size-3-g">G</label>
+                                <input type="radio" name="size-3" value="GG" id="size-3-gg">
+                                <label for="size-3-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Cinza Casual', 'size-3')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/camiseta-masculina-estilo-fashion-streetwear.jpg" alt="Camiseta Fashion">
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Fashion Streetwear</h3>
+                        <p class="price">R$ 94,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-4" value="P" id="size-4-p" checked>
+                                <label for="size-4-p">P</label>
+                                <input type="radio" name="size-4" value="M" id="size-4-m">
+                                <label for="size-4-m">M</label>
+                                <input type="radio" name="size-4" value="G" id="size-4-g">
+                                <label for="size-4-g">G</label>
+                                <input type="radio" name="size-4" value="GG" id="size-4-gg">
+                                <label for="size-4-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Fashion Streetwear', 'size-4')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/camiseta-premium-tecido-qualidade.jpg" alt="Camiseta Premium">
+                        <span class="badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Premium Qualidade</h3>
+                        <p class="price">R$ 109,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-5" value="P" id="size-5-p" checked>
+                                <label for="size-5-p">P</label>
+                                <input type="radio" name="size-5" value="M" id="size-5-m">
+                                <label for="size-5-m">M</label>
+                                <input type="radio" name="size-5" value="G" id="size-5-g">
+                                <label for="size-5-g">G</label>
+                                <input type="radio" name="size-5" value="GG" id="size-5-gg">
+                                <label for="size-5-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Premium Qualidade', 'size-5')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/public/homem-vestindo-camiseta-preta-quality.jpg" alt="Camiseta Quality">
+                        <span class="badge">Exclusiva</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camiseta Quality Edition</h3>
+                        <p class="price">R$ 99,90</p>
+                        <div class="size-selector">
+                            <label>Tamanho:</label>
+                            <div class="sizes">
+                                <input type="radio" name="size-6" value="P" id="size-6-p" checked>
+                                <label for="size-6-p">P</label>
+                                <input type="radio" name="size-6" value="M" id="size-6-m">
+                                <label for="size-6-m">M</label>
+                                <input type="radio" name="size-6" value="G" id="size-6-g">
+                                <label for="size-6-g">G</label>
+                                <input type="radio" name="size-6" value="GG" id="size-6-gg">
+                                <label for="size-6-gg">GG</label>
+                            </div>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Camiseta Quality Edition', 'size-6')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Comprar no WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SANN'T. Todos os direitos reservados. Desenvolvido por <strong>MPDEVELOPER</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
